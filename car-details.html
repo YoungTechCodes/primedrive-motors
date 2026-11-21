@@ -1,0 +1,521 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Vehicle Details | PrimeDrive Motors</title>
+
+  <meta
+    name="description"
+    content="Explore vehicle specifications, features and enquiry information at PrimeDrive Motors."
+  >
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- PAGE LOADER -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-content">
+      <span class="loader-logo">PRIME<span>DRIVE</span></span>
+      <div class="loader-line"></div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+
+      <a href="index.html" class="logo">
+        PRIME<span>DRIVE</span>
+        <small>MOTORS</small>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="navWrap"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-wrap" id="navWrap">
+
+        <nav class="navbar">
+          <a href="index.html">Home</a>
+          <a href="inventory.html" class="active">Inventory</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <a href="contact.html" class="header-cta">
+          Get In Touch
+        </a>
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- VEHICLE PAGE HERO -->
+    <section class="detail-hero">
+
+      <div class="detail-hero-background"></div>
+
+      <div class="container detail-hero-content">
+
+        <div class="detail-breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <a href="inventory.html">Inventory</a>
+          <span>/</span>
+          <span>Vehicle Details</span>
+        </div>
+
+        <span class="detail-eyebrow">EXPLORE OUR COLLECTION</span>
+
+        <h1 id="detailHeroTitle">Discover Your Next Vehicle</h1>
+
+        <p>
+          Explore the design, performance, comfort and features
+          that make every vehicle in our collection worth discovering.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- VEHICLE DETAILS -->
+    <section class="detail-main section-padding">
+
+      <div class="container">
+
+        <div class="detail-layout">
+
+          <!-- LEFT SIDE: VEHICLE GALLERY -->
+          <div class="detail-gallery" data-reveal>
+
+            <div class="detail-main-image">
+              <img
+                id="detailMainImage"
+                src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1400&q=85"
+                alt="Selected vehicle"
+              >
+
+              <span class="detail-image-label">
+                PRIME COLLECTION
+              </span>
+            </div>
+
+            <div class="detail-thumbnails">
+
+              <button
+                class="detail-thumbnail active"
+                type="button"
+                data-image="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1400&q=85"
+                aria-label="View vehicle image one"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=300&q=75"
+                  alt="Vehicle exterior view"
+                >
+              </button>
+
+              <button
+                class="detail-thumbnail"
+                type="button"
+                data-image="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1400&q=85"
+                aria-label="View vehicle image two"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=300&q=75"
+                  alt="Vehicle design view"
+                >
+              </button>
+
+              <button
+                class="detail-thumbnail"
+                type="button"
+                data-image="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1400&q=85"
+                aria-label="View vehicle image three"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=300&q=75"
+                  alt="Vehicle side view"
+                >
+              </button>
+
+              <button
+                class="detail-thumbnail"
+                type="button"
+                data-image="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1400&q=85"
+                aria-label="View vehicle image four"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=300&q=75"
+                  alt="Vehicle road view"
+                >
+              </button>
+
+            </div>
+
+            <!-- VEHICLE DESCRIPTION -->
+            <div class="detail-description">
+
+              <span class="section-label">VEHICLE OVERVIEW</span>
+
+              <h2>Designed Around Your Driving Experience</h2>
+
+              <p id="detailDescription">
+                Discover a vehicle that combines distinctive styling,
+                thoughtful engineering and everyday comfort. Explore
+                its design, cabin experience and performance features
+                before making your next vehicle decision.
+              </p>
+
+              <p>
+                At PrimeDrive Motors, we believe choosing a vehicle
+                should be an informed and enjoyable experience.
+                Our team is available to help you understand the
+                vehicle's features and answer your questions.
+              </p>
+
+            </div>
+
+            <!-- VEHICLE FEATURES -->
+            <div class="detail-features">
+
+              <span class="section-label">KEY FEATURES</span>
+
+              <h2>Features and Highlights</h2>
+
+              <div class="detail-feature-grid" id="detailFeatures">
+
+                <div class="detail-feature">
+                  <span class="feature-icon">✦</span>
+                  <span>Premium Interior</span>
+                </div>
+
+                <div class="detail-feature">
+                  <span class="feature-icon">✦</span>
+                  <span>Advanced Technology</span>
+                </div>
+
+                <div class="detail-feature">
+                  <span class="feature-icon">✦</span>
+                  <span>Modern Exterior Design</span>
+                </div>
+
+                <div class="detail-feature">
+                  <span class="feature-icon">✦</span>
+                  <span>Comfortable Cabin</span>
+                </div>
+
+                <div class="detail-feature">
+                  <span class="feature-icon">✦</span>
+                  <span>Driver Assistance Features</span>
+                </div>
+
+                <div class="detail-feature">
+                  <span class="feature-icon">✦</span>
+                  <span>Refined Driving Experience</span>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- RIGHT SIDE: VEHICLE INFORMATION -->
+          <aside class="detail-sidebar" data-reveal>
+
+            <div class="detail-info-card">
+
+              <span class="detail-status">
+                VEHICLE INFORMATION
+              </span>
+
+              <h2 id="detailTitle">BMW 5 Series</h2>
+
+              <p class="detail-subtitle" id="detailSubtitle">
+                Luxury Executive Sedan
+              </p>
+
+              <div class="detail-divider"></div>
+
+              <h3>Vehicle Specifications</h3>
+
+              <div class="detail-spec-list">
+
+                <div class="detail-spec-row">
+                  <span>Brand</span>
+                  <strong id="detailBrand">BMW</strong>
+                </div>
+
+                <div class="detail-spec-row">
+                  <span>Model</span>
+                  <strong id="detailModel">5 Series</strong>
+                </div>
+
+                <div class="detail-spec-row">
+                  <span>Category</span>
+                  <strong id="detailCategory">Luxury</strong>
+                </div>
+
+                <div class="detail-spec-row">
+                  <span>Body Type</span>
+                  <strong id="detailBody">Sedan</strong>
+                </div>
+
+                <div class="detail-spec-row">
+                  <span>Transmission</span>
+                  <strong id="detailTransmission">Automatic</strong>
+                </div>
+
+                <div class="detail-spec-row">
+                  <span>Fuel Type</span>
+                  <strong id="detailFuel">Petrol</strong>
+                </div>
+
+                <div class="detail-spec-row">
+                  <span>Condition</span>
+                  <strong id="detailCondition">Enquire for details</strong>
+                </div>
+
+              </div>
+
+              <div class="detail-divider"></div>
+
+              <div class="detail-enquiry">
+
+                <h3>Interested in This Vehicle?</h3>
+
+                <p>
+                  Speak with our team to ask questions, request
+                  further information or discuss your vehicle needs.
+                </p>
+
+                <a
+                  href="tel:09133819307"
+                  class="detail-call-button"
+                >
+                  Call 09133819307
+                </a>
+
+                <a
+                  id="detailWhatsApp"
+                  href="https://wa.me/2349133819307"
+                  class="detail-whatsapp-button"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Enquire on WhatsApp
+                </a>
+
+              </div>
+
+            </div>
+
+            <div class="detail-help-card">
+
+              <span class="section-label">NEED ASSISTANCE?</span>
+
+              <h3>Let Us Help You Choose</h3>
+
+              <p>
+                Not sure which vehicle suits your needs?
+                Contact our team for assistance and vehicle information.
+              </p>
+
+              <a href="contact.html">Contact PrimeDrive Motors →</a>
+
+            </div>
+
+          </aside>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- OTHER VEHICLES -->
+    <section class="detail-more section-padding">
+
+      <div class="container">
+
+        <div class="detail-more-heading" data-reveal>
+
+          <div>
+            <span class="section-label">EXPLORE MORE</span>
+            <h2>Discover More Vehicles</h2>
+            <p>
+              Browse our collection and explore other vehicles
+              that may interest you.
+            </p>
+          </div>
+
+          <a href="inventory.html" class="detail-view-all">
+            View All Vehicles →
+          </a>
+
+        </div>
+
+        <div class="detail-more-banner" data-reveal>
+
+          <div>
+            <span class="section-label">THE PRIMEDRIVE COLLECTION</span>
+            <h3>Find a Vehicle That Matches Your Lifestyle</h3>
+            <p>
+              Explore our vehicle collection and speak with our
+              team whenever you need more information.
+            </p>
+          </div>
+
+          <a href="inventory.html" class="detail-banner-button">
+            Explore Inventory
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT CTA -->
+    <section class="detail-contact section-padding">
+
+      <div class="container">
+
+        <div class="detail-contact-content" data-reveal>
+
+          <span class="section-label">YOUR NEXT JOURNEY STARTS HERE</span>
+
+          <h2>Ready to Discover More?</h2>
+
+          <p>
+            Connect with PrimeDrive Motors for vehicle information,
+            enquiries and assistance with your next vehicle decision.
+          </p>
+
+          <div class="detail-contact-actions">
+
+            <a href="tel:09133819307" class="detail-call-button">
+              Call Our Team
+            </a>
+
+            <a href="contact.html" class="detail-view-all">
+              Contact Us
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <div class="container footer-main">
+
+      <div class="footer-about">
+
+        <a href="index.html" class="logo footer-logo">
+          PRIME<span>DRIVE</span>
+          <small>MOTORS</small>
+        </a>
+
+        <p>
+          PrimeDrive Motors is dedicated to helping customers
+          explore quality vehicles with confidence, clear
+          information and professional assistance.
+        </p>
+
+      </div>
+
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="inventory.html">Inventory</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Our Services</h3>
+        <a href="services.html">Vehicle Sales</a>
+        <a href="services.html">Vehicle Enquiries</a>
+        <a href="services.html">Vehicle Assistance</a>
+        <a href="services.html">Customer Support</a>
+      </div>
+
+      <div class="footer-column footer-contact">
+        <h3>Contact Information</h3>
+
+        <p>Phone: 09133819307</p>
+
+        <a href="tel:09133819307">
+          Call Our Team
+        </a>
+
+        <a
+          href="https://wa.me/2349133819307"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WhatsApp Us
+        </a>
+
+        <a href="contact.html">Send an Enquiry</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>
+          © <span id="currentYear"></span> PrimeDrive Motors.
+          All Rights Reserved.
+        </p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button
+    class="back-to-top"
+    id="backToTop"
+    aria-label="Back to top"
+  >
+    ↑
+  </button>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

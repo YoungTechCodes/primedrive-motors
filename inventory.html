@@ -1,0 +1,660 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Explore the PrimeDrive Motors vehicle collection. Discover premium sedans, SUVs, sports cars and more.">
+
+  <title>Vehicle Inventory | PrimeDrive Motors</title>
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- PAGE LOADER -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-logo">PRIME<span>DRIVE</span></div>
+    <div class="loader-line"></div>
+  </div>
+
+
+  <!-- HEADER -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+
+      <a href="index.html" class="logo">
+        <span class="logo-mark">P</span>
+        <span class="logo-text">
+          <strong>PRIME<span>DRIVE</span></strong>
+          <small>MOTORS</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="navWrap">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-wrap" id="navWrap">
+
+        <nav class="navbar" aria-label="Main navigation">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="inventory.html" class="nav-link active">Inventory</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <a href="contact.html" class="header-cta">
+          Contact Us <span>↗</span>
+        </a>
+
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- INVENTORY HERO -->
+    <section class="inventory-hero">
+
+      <div class="inventory-hero-background"></div>
+      <div class="inventory-hero-overlay"></div>
+
+      <div class="container inventory-hero-content" data-reveal>
+
+        <span class="eyebrow">
+          <span class="eyebrow-line"></span>
+          THE PRIMEDRIVE COLLECTION
+        </span>
+
+        <h1>
+          Discover Your
+          <span>Next Perfect Drive.</span>
+        </h1>
+
+        <p>
+          Explore our demonstration vehicle collection, from elegant
+          executive sedans to versatile SUVs and exciting sports cars.
+          Find a vehicle that matches your preferences and driving style.
+        </p>
+
+        <div class="inventory-breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <strong>Inventory</strong>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- INVENTORY INTRO -->
+    <section class="inventory-intro section-padding">
+      <div class="container inventory-intro-inner">
+
+        <div data-reveal>
+          <span class="eyebrow">
+            <span class="eyebrow-line"></span>
+            EXPLORE THE COLLECTION
+          </span>
+
+          <h2>Vehicles For Different Journeys</h2>
+        </div>
+
+        <p data-reveal>
+          Every driver has different needs. Whether you appreciate
+          sophisticated styling, everyday comfort, additional space or
+          sporty performance, our collection gives you a place to start
+          exploring your options.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- VEHICLE INVENTORY -->
+    <section class="inventory-section section-padding" id="vehicleInventory">
+
+      <div class="container">
+
+        <div class="inventory-heading" data-reveal>
+          <div>
+            <span class="eyebrow">
+              <span class="eyebrow-line"></span>
+              VEHICLE SHOWCASE
+            </span>
+
+            <h2>Explore Our Vehicles</h2>
+
+            <p>
+              Browse ten demonstration vehicle listings below.
+              Contact us to discuss a vehicle and confirm its details.
+            </p>
+          </div>
+
+          <div class="inventory-count">
+            <strong>10</strong>
+            <span>SHOWCASE VEHICLES</span>
+          </div>
+        </div>
+
+
+        <!-- SEARCH AND FILTER -->
+        <div class="inventory-toolbar" data-reveal>
+
+          <div class="inventory-search">
+            <span>⌕</span>
+            <input
+              type="search"
+              id="vehicleSearch"
+              placeholder="Search vehicle name or category..."
+              aria-label="Search vehicles"
+            >
+          </div>
+
+          <div class="inventory-filter">
+            <label for="vehicleFilter">Vehicle Category</label>
+
+            <select id="vehicleFilter">
+              <option value="all">All Vehicles</option>
+              <option value="sedan">Sedans</option>
+              <option value="suv">SUVs</option>
+              <option value="sports">Sports Cars</option>
+              <option value="luxury">Luxury Vehicles</option>
+            </select>
+          </div>
+
+        </div>
+
+
+        <!-- RESULTS INFORMATION -->
+        <div class="inventory-results">
+          <p id="inventoryResults">
+            Showing 10 demonstration vehicles
+          </p>
+        </div>
+
+
+        <!-- VEHICLE GRID -->
+        <div class="inventory-grid" id="inventoryGrid">
+
+
+          <!-- VEHICLE 1 -->
+          <article class="inventory-card" data-category="luxury sedan" data-reveal>
+
+            <a href="car-details.html?vehicle=bmw-5-series" class="inventory-image">
+              <img
+                src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1100&q=85"
+                alt="BMW luxury sedan"
+                loading="lazy"
+              >
+              <span class="inventory-tag">LUXURY</span>
+            </a>
+
+            <div class="inventory-card-content">
+              <span class="inventory-category">LUXURY SEDAN</span>
+              <h3>BMW 5 Series</h3>
+
+              <p>
+                A sophisticated executive sedan with elegant styling,
+                refined interior design and a premium road presence.
+              </p>
+
+              <div class="inventory-specs">
+                <span>Automatic</span>
+                <span>Executive</span>
+                <span>Premium</span>
+              </div>
+
+              <a href="car-details.html?vehicle=bmw-5-series" class="inventory-details">
+                Explore Vehicle <span>→</span>
+              </a>
+            </div>
+          </article>
+
+
+          <!-- VEHICLE 2 -->
+          <article class="inventory-card" data-category="luxury sedan" data-reveal>
+
+            <a href="car-details.html?vehicle=mercedes-s-class" class="inventory-image">
+              <img
+                src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1100&q=85"
+                alt="Mercedes-Benz luxury vehicle"
+                loading="lazy"
+              >
+              <span class="inventory-tag">PREMIUM</span>
+            </a>
+
+            <div class="inventory-card-content">
+              <span class="inventory-category">LUXURY SALOON</span>
+              <h3>Mercedes-Benz S-Class</h3>
+
+              <p>
+                A distinguished luxury vehicle known for its elegant
+                design, impressive cabin and refined character.
+              </p>
+
+              <div class="inventory-specs">
+                <span>Automatic</span>
+                <span>Luxury</span>
+                <span>Comfort</span>
+              </div>
+
+              <a href="car-details.html?vehicle=mercedes-s-class" class="inventory-details">
+                Explore Vehicle <span>→</span>
+              </a>
+            </div>
+          </article>
+
+
+          <!-- VEHICLE 3 -->
+          <article class="inventory-card" data-category="sedan luxury" data-reveal>
+
+            <a href="car-details.html?vehicle=audi-a6" class="inventory-image">
+              <img
+                src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1100&q=85"
+                alt="Audi premium saloon"
+                loading="lazy"
+              >
+              <span class="inventory-tag">FEATURED</span>
+            </a>
+
+            <div class="inventory-card-content">
+              <span class="inventory-category">PREMIUM SEDAN</span>
+              <h3>Audi A6</h3>
+
+              <p>
+                Modern automotive styling meets a comfortable cabin
+                and a clean, contemporary exterior.
+              </p>
+
+              <div class="inventory-specs">
+                <span>Automatic</span>
+                <span>Modern</span>
+                <span>Premium</span>
+              </div>
+
+              <a href="car-details.html?vehicle=audi-a6" class="inventory-details">
+                Explore Vehicle <span>→</span>
+              </a>
+            </div>
+          </article>
+
+
+          <!-- VEHICLE 4 -->
+          <article class="inventory-card" data-category="suv luxury" data-reveal>
+
+            <a href="car-details.html?vehicle=range-rover-sport" class="inventory-image">
+              <img
+                src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1100&q=85"
+                alt="Premium Range Rover style SUV"
+                loading="lazy"
+              >
+              <span class="inventory-tag">SUV</span>
+            </a>
+
+            <div class="inventory-card-content">
+              <span class="inventory-category">LUXURY SUV</span>
+              <h3>Range Rover Sport</h3>
+
+              <p>
+                A commanding SUV design with a bold exterior,
+                generous cabin space and an adventurous character.
+              </p>
+
+              <div class="inventory-specs">
+                <span>Automatic</span>
+                <span>Spacious</span>
+                <span>Luxury</span>
+              </div>
+
+              <a href="car-details.html?vehicle=range-rover-sport" class="inventory-details">
+                Explore Vehicle <span>→</span>
+              </a>
+            </div>
+          </article>
+
+
+          <!-- VEHICLE 5 -->
+          <article class="inventory-card" data-category="suv luxury" data-reveal>
+
+            <a href="car-details.html?vehicle=toyota-land-cruiser" class="inventory-image">
+              <img
+                src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1100&q=85"
+                alt="Premium SUV vehicle"
+                loading="lazy"
+              >
+              <span class="inventory-tag">POPULAR SUV</span>
+            </a>
+
+            <div class="inventory-card-content">
+              <span class="inventory-category">FULL-SIZE SUV</span>
+              <h3>Toyota Land Cruiser</h3>
+
+              <p>
+                A substantial SUV with a recognisable design,
+                practical space and a strong touring character.
+              </p>
+
+              <div class="inventory-specs">
+                <span>Automatic</span>
+                <span>Large Cabin</span>
+                <span>Versatile</span>
+              </div>
+
+              <a href="car-details.html?vehicle=toyota-land-cruiser" class="inventory-details">
+                Explore Vehicle <span>→</span>
+              </a>
+            </div>
+          </article>
+
+
+          <!-- VEHICLE 6 -->
+          <article class="inventory-card" data-category="sports luxury" data-reveal>
+
+            <a href="car-details.html?vehicle=porsche-911" class="inventory-image">
+              <img
+                src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1100&q=85"
+                alt="Porsche sports car"
+                loading="lazy"
+              >
+              <span class="inventory-tag">SPORT</span>
+            </a>
+
+            <div class="inventory-card-content">
+              <span class="inventory-category">SPORTS CAR</span>
+              <h3>Porsche 911</h3>
+
+              <p>
+                An iconic sports car design with distinctive proportions,
+                an athletic appearance and an exciting personality.
+              </p>
+
+              <div class="inventory-specs">
+                <span>Sports</span>
+                <span>Performance</span>
+                <span>Premium</span>
+              </div>
+
+              <a href="car-details.html?vehicle=porsche-911" class="inventory-details">
+                Explore Vehicle <span>→</span>
+              </a>
+            </div>
+          </article>
+
+
+          <!-- VEHICLE 7 -->
+          <article class="inventory-card" data-category="sedan" data-reveal>
+
+            <a href="car-details.html?vehicle=toyota-camry" class="inventory-image">
+              <img
+                src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?auto=format&fit=crop&w=1100&q=85"
+                alt="Modern Toyota sedan"
+                loading="lazy"
+              >
+              <span class="inventory-tag">EVERYDAY COMFORT</span>
+            </a>
+
+            <div class="inventory-card-content">
+              <span class="inventory-category">MID-SIZE SEDAN</span>
+              <h3>Toyota Camry</h3>
+
+              <p>
+                A practical sedan concept combining a modern appearance,
+                everyday usability and comfortable cabin design.
+              </p>
+
+              <div class="inventory-specs">
+                <span>Automatic</span>
+                <span>Comfort</span>
+                <span>Sedan</span>
+              </div>
+
+              <a href="car-details.html?vehicle=toyota-camry" class="inventory-details">
+                Explore Vehicle <span>→</span>
+              </a>
+            </div>
+          </article>
+
+
+          <!-- VEHICLE 8 -->
+          <article class="inventory-card" data-category="suv" data-reveal>
+
+            <a href="car-details.html?vehicle=lexus-rx" class="inventory-image">
+              <img
+                src="https://images.unsplash.com/photo-1606152421802-db97b9c7a11b?auto=format&fit=crop&w=1100&q=85"
+                alt="Lexus inspired premium SUV"
+                loading="lazy"
+              >
+              <span class="inventory-tag">PREMIUM SUV</span>
+            </a>
+
+            <div class="inventory-card-content">
+              <span class="inventory-category">LUXURY CROSSOVER</span>
+              <h3>Lexus RX</h3>
+
+              <p>
+                A stylish luxury crossover with a distinctive design,
+                comfortable interior and versatile character.
+              </p>
+
+              <div class="inventory-specs">
+                <span>Automatic</span>
+                <span>Comfort</span>
+                <span>Versatile</span>
+              </div>
+
+              <a href="car-details.html?vehicle=lexus-rx" class="inventory-details">
+                Explore Vehicle <span>→</span>
+              </a>
+            </div>
+          </article>
+
+
+          <!-- VEHICLE 9 -->
+          <article class="inventory-card" data-category="sports luxury" data-reveal>
+
+            <a href="car-details.html?vehicle=ford-mustang" class="inventory-image">
+              <img
+                src="https://images.unsplash.com/photo-1584345604476-8ec5e12e42dd?auto=format&fit=crop&w=1100&q=85"
+                alt="Ford Mustang style sports car"
+                loading="lazy"
+              >
+              <span class="inventory-tag">SPORT STYLE</span>
+            </a>
+
+            <div class="inventory-card-content">
+              <span class="inventory-category">SPORT COUPE</span>
+              <h3>Ford Mustang</h3>
+
+              <p>
+                A recognisable coupe silhouette with a bold design,
+                sporty proportions and an unmistakable road presence.
+              </p>
+
+              <div class="inventory-specs">
+                <span>Coupe</span>
+                <span>Sporty</span>
+                <span>Premium</span>
+              </div>
+
+              <a href="car-details.html?vehicle=ford-mustang" class="inventory-details">
+                Explore Vehicle <span>→</span>
+              </a>
+            </div>
+          </article>
+
+<!-- VEHICLE 10: MERCEDES-BENZ G-CLASS -->
+<article class="inventory-card" data-category="suv luxury" data-reveal>
+
+  <a href="car-details.html?vehicle=mercedes-g-class" class="inventory-image">
+    <img
+      src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1100&q=85"
+      alt="Mercedes-Benz G-Class style luxury SUV"
+      loading="lazy"
+    >
+    <span class="inventory-tag">ICONIC DESIGN</span>
+  </a>
+
+  <div class="inventory-card-content">
+    <span class="inventory-category">LUXURY SUV</span>
+
+    <h3>Mercedes-Benz G-Class</h3>
+
+    <p>
+      A distinctive box-shaped SUV design with a commanding
+      appearance, premium comfort and a strong luxury identity.
+    </p>
+
+    <div class="inventory-specs">
+      <span>Automatic</span>
+      <span>Luxury</span>
+      <span>Bold Design</span>
+    </div>
+
+    <a href="car-details.html?vehicle=mercedes-g-class" class="inventory-details">
+      Explore Vehicle <span>→</span>
+    </a>
+  </div>
+
+</article>
+
+
+
+        <!-- NO RESULTS -->
+        <div class="inventory-empty" id="inventoryEmpty" hidden>
+          <h3>No matching vehicles found</h3>
+          <p>Try another vehicle name or choose a different category.</p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- INVENTORY CONTACT BANNER -->
+    <section class="inventory-contact-banner">
+
+      <div class="inventory-contact-background"></div>
+      <div class="inventory-contact-overlay"></div>
+
+      <div class="container inventory-contact-content" data-reveal>
+
+        <span class="eyebrow">
+          <span class="eyebrow-line"></span>
+          YOUR NEXT JOURNEY
+        </span>
+
+        <h2>Found A Vehicle You Like?</h2>
+
+        <p>
+          Get in touch with PrimeDrive Motors to discuss your vehicle
+          interests and ask questions about the next steps.
+        </p>
+
+        <a href="contact.html" class="btn btn-primary">
+          Make An Enquiry <span>↗</span>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <div class="container footer-main">
+
+      <div class="footer-brand">
+        <a href="index.html" class="logo footer-logo">
+          <span class="logo-mark">P</span>
+          <span class="logo-text">
+            <strong>PRIME<span>DRIVE</span></strong>
+            <small>MOTORS</small>
+          </span>
+        </a>
+
+        <p>
+          A modern vehicle-shopping experience built around discovery,
+          helpful information and customer enquiries.
+        </p>
+
+        <a href="tel:09133819307" class="footer-phone">
+          ☎ 09133819307
+        </a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Explore</h3>
+        <a href="index.html">Home</a>
+        <a href="inventory.html">Our Inventory</a>
+        <a href="services.html">Our Services</a>
+        <a href="about.html">About PrimeDrive</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Customer Support</h3>
+        <a href="contact.html">Contact Us</a>
+        <a href="contact.html">Vehicle Enquiries</a>
+        <a href="services.html">Our Services</a>
+      </div>
+
+      <div class="footer-column footer-contact">
+        <h3>Get In Touch</h3>
+        <p>Have a question about a vehicle?</p>
+
+        <a href="tel:09133819307">09133819307</a>
+
+        <a href="https://wa.me/2349133819307"
+           target="_blank"
+           rel="noopener noreferrer">
+          Chat on WhatsApp
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>
+          © <span id="currentYear"></span> PrimeDrive Motors.
+          All rights reserved.
+        </p>
+
+        <p class="footer-credit">
+          Designed for a better driving experience.
+        </p>
+      </div>
+    </div>
+
+  </footer>
+
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    ↑
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>
